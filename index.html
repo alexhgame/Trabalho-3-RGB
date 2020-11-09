@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>RGB to Hex Color Converter in JS</title>
+</head>
+<body>
+	<center>
+	<div class="controls">
+
+		<input type="range" min="0" max="255" value="0" onchange="document.getElementById('redValEl').value = this.value;convert();">
+		<b>Vermelho:</b> <input id="redValEl" type="text" value="0" style="width: 30px;"><br><br>
+		<input type="range" min="0" max="255" value="0" onchange="document.getElementById('greenValEl').value = this.value;convert();">
+		<b>Verde:</b> <input id="greenValEl" type="text" value="0" style="width: 30px;"><br><br>
+		<input type="range" min="0" max="255" value="0" onchange="document.getElementById('blueValEl').value = this.value;convert();">
+		<b>Azul:</b> <input id="blueValEl" type="text" value="0" style="width: 30px;"><br><br>
+
+		<input id="hexaValue" type="text" value="#000000">
+	</div>
+	
+	<div id="rgb" style="width: 300px; height: 300px;"></div>
+
+	</center>
+	<script src="script.js"></script>
+</body>
+</html>
